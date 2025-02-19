@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239148614623",
+    "project_id": "nonamehochubabok",
+    "storage_bucket": "nonamehochubabok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239148614623:android:c30b81c70b8c7c2efefa6a",
+        "android_client_info": {
+          "package_name": "com.example.no_name_hochu_babok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6qhlEyXniHSZUvx-mNDtKIQIRlhz7eZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CeationObject.HotelActivity"
+    android:background="@color/bg">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/black_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/LineBtn"
+        android:layout_below="@id/black_relative"
+        android:contentDescription="@string/ScrollView">
+
+        <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+        <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+        <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/gray_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg3">
+                <TextView
+                    android:id="@+id/editing_hotel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/editing_hotel"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/my_hotels_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg2"
+                android:layout_below="@id/gray_relative">
+                <TextView
+                    android:id="@+id/my_hotels_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_hotels"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/information_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_hotels_relative"
+                android:layout_marginTop="30dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/basic_information_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bg2"
+                    android:text="@string/basic_information"
+                    android:gravity="clip_vertical"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    />
+                <Button
+                    android:id="@+id/photo_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bg"
+                    android:layout_below="@id/basic_information_btn"
+                    android:text="@string/photo"
+                    android:gravity="clip_vertical"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    />
+                <Button
+                    android:id="@+id/rooms_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bg"
+                    android:text="@string/rooms"
+                    android:layout_below="@id/photo_btn"
+                    android:gravity="clip_vertical"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:enabled="false"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/name_hotel_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/information_linear"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/name_hotel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/name_hotel"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/name_hotel_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/name_hotel_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/information_hotel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/information_hotel"
+                    android:layout_below="@id/name_hotel_edit"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_hotel_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/type_street_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/type_street"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/type_street_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/type_street_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"/>
+                <RadioGroup
+                    android:id="@+id/address_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type_street_edit"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/choose_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/choose"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/boulevard_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/boulevard"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/road_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/road"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/track_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/track"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/residential_area_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/residential_area"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/alleyway_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/alleyway"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/square_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/square"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/transit_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/transit"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/avenue_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/avenue"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/route_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/route"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/street_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/street"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/alley_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/alley"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/kilometer_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/kilometer"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/line_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/line"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/embankment_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/embankment"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/clearing_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/clearing"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/country_lane_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/country_lane"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/alley_alleyway_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/alley_alleyway"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/descent_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/descent"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/dead_end_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/dead_end"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                    <RadioButton
+                        android:id="@+id/highway_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/highway"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="16dp" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_to_close"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:layout_below="@+id/address_radiogroup"
+                    android:gravity="center"
+                    android:text="@string/to_close"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/name_street_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_to_close"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/name_street"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/name_street_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_below="@+id/name_street_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_street_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/home1"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/home_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/home_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/body_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/body"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/body_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/body_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/black"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/category_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/category"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+                <TextView
+                    android:id="@+id/number_stars_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/category_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/number_stars"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/stardom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number_stars_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/stardom"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/stardom_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/stardom_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"/>
+                <RadioGroup
+                    android:id="@+id/numbers_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stardom_edit"
+                    android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/choose_radiobutton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:text="@string/choose"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/zero_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/zero"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/one_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/one"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/two_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/two"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/three_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/three"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/four_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/five_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/five"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:id="@+id/certificate_number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/numbers_radiogroup"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/certificate_number"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/certificate_number_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/certificate_number_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:paddingHorizontal="10dp"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/btn_to_close1"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/certificate_number_edit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/bg12"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/to_close"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/internet_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:id="@+id/internet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/internet"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/service_internet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/internet_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_internet"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/internet_access_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/service_internet_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/internet_access"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/internet_access_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/internet_access_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp" />
+                <RadioGroup
+                    android:id="@+id/internet_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/internet_access_edit"
+                    android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/choose_radiobutton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:text="@string/choose"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/yes_fee_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/yes_fee"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/yes_not_fee_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/yes_not_fee"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/no_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_to_close2"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/internet_radiogroup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/bg12"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/to_close"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/parking_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/internet_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/parking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/parking"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+                <TextView
+                    android:id="@+id/information_parking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/parking_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/information_parking"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/parking_availability_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/information_parking_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/parking_availability"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/parking_availability_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/parking_availability_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:hint="@string/choose"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp" />
+                <RadioGroup
+                    android:id="@+id/parking_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/parking_availability_edit"
+                    android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/choose_radiobutton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:text="@string/choose"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/free_parking_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/free_parking"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/not_free_parking_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/not_free_parking"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <RadioButton
+                        android:id="@+id/not_parking_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/not_parking"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginHorizontal="10dp"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_to_close3"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/parking_radiogroup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/bg12"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/to_close"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/private_public_parking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_to_close3"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/private_public_parking"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/intelligence_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parking_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/intelligence_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/intelligence"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/year_construction_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/intelligence_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/year_construction"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/year_construction_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/year_construction_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/new_year"
+                    android:inputType="number"
+                    android:paddingHorizontal="10dp"/>
+
+                <TextView
+                    android:id="@+id/number_rooms_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/year_construction_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/number_rooms"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/number_rooms_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/number_rooms_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/zero"
+                    android:paddingHorizontal="10dp"/>
+
+                <TextView
+                    android:id="@+id/check_after_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number_rooms_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/check_after"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/check_after_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/check_after_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/departure_before_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_to_close4"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/departure_before"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/departure_before_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/departure_before_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/smoking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_to_close5"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/smoking"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/smoking_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/smoking_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/choose"/>
+                <TextView
+                    android:id="@+id/accepted_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_to_close6"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/accepted_fee"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/accepted_fee_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/accepted_fee_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/choose"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/facilities_services_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intelligence_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/facilities_services_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/facilities_services"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"/>
+               <LinearLayout
+                   android:id="@+id/facilities_services_linear"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_below="@id/facilities_services_text">
+
+                   <FrameLayout
+                       android:id="@+id/frame_restaurant"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp"
+                       android:layout_marginTop="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/restaurant"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_restaurant"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_room_service"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/room_service"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_room_service"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_bar_counter"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/bar_counter"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_bar_counter"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_front_desk"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/front_desk"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_front_desk"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_sauna"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/sauna"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_sauna"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_fitness_room"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/fitness_room"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_fitness_room"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_garden"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/garden"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_garden"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_terrace"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/terrace"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_terrace"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_spa_center"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/spa_center"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_spa_center"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_football_field"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/football_field"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_football_field"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_tennis_court"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/tennis_court"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_tennis_court"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_golf"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/golf"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_golf"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_aqua_park"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/aqua_park"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_aqua_park"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_outdoor_swimming_pool"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/outdoor_swimming_pool"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_outdoor_swimming_pool"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_indoor_swimming_pool"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/indoor_swimming_pool"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_indoor_swimming_pool"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_jacuzzi"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/jacuzzi"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_jacuzzi"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_private_beach"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/private_beach"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_private_beach"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_playground"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/playground"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_playground"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_elevator"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/elevator"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_elevator"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_ramp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/ramp"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_ramp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_children_pool"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/children_pool"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_children_pool"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_bath_tub"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/bath_tub"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_bath_tub"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_heated_swimming_pool"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/heated_swimming_pool"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_heated_swimming_pool"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_meeting_room"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/meeting_room"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_meeting_room"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_conference_room"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/conference_room"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_conference_room"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_luggage_storage"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/luggage_storage"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_luggage_storage"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_laundry"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/laundry"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_laundry"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/frame_business_center"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="10dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/aleo_semibold"
+                           android:textColor="@color/black"
+                           android:text="@string/business_center"
+                           android:layout_gravity="center_vertical"
+                           android:textSize="17dp"
+                           android:layout_marginStart="5dp"/>
+                       <CheckBox
+                           android:id="@+id/checkbox_business_center"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="end"
+                           tools:ignore="TouchTargetSizeCheck" />
+                   </FrameLayout>
+               </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_fee_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facilities_services_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/service_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_fee"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/information_service_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/service_fee_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/information_service_fee"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/cleaning_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/information_service_fee_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/cleaning"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/cleaning_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/cleaning_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:paddingHorizontal="10dp"/>
+
+                <TextView
+                    android:id="@+id/linen_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cleaning_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/linen"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/linen_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/linen_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:paddingHorizontal="10dp"/>
+
+                <TextView
+                    android:id="@+id/reporting_documents_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linen_edit"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/reporting_documents"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/reporting_documents_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/reporting_documents_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:hint="@string/choose"
+                    android:paddingHorizontal="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/transfer_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/service_fee_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/transfer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/transfer"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/information_transfer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/information_transfer"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <FrameLayout
+                    android:id="@+id/frame_provided_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_below="@id/information_transfer_text">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:textColor="@color/black"
+                        android:text="@string/provided_transfer"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="17dp"
+                        android:layout_marginStart="5dp"/>
+                    <CheckBox
+                        android:id="@+id/checkbox_provided_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detailed_description_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transfer_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/detailed_description_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/detailed_description"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+                <EditText
+                    android:id="@+id/detailed_description_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/detailed_description_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/recommendations_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/detailed_description_edit"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations1"
+                    android:textSize="21dp"
+                    tools:ignore="TextSizeCheck"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/recommendations_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations2"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+                <TextView
+                    android:id="@+id/recommendations_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text1"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations3"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+                <TextView
+                    android:id="@+id/recommendations_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text2"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations4"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+                <TextView
+                    android:id="@+id/recommendations_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations5"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+                <TextView
+                    android:id="@+id/recommendations_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text4"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations6"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+                <TextView
+                    android:id="@+id/recommendations_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/recommendations_text5"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/recommendations7"
+                    android:textSize="19dp"
+                    tools:ignore="TextSizeCheck"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/other_resources_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailed_description_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/other_resources_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/other_resources"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/information_other_resources_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/other_resources_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/information_other_resources"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+                <EditText
+                    android:id="@+id/information_other_resources_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/information_other_resources_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/border_bg3_3"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/specify_links"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/other_resources_relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_resources_relative"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg3"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btn_resume"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/resume"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/main_relative_gr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:visibility="invisible">
+                <RelativeLayout
+                    android:id="@+id/gray_relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg3">
+                    <TextView
+                        android:id="@+id/editing_hotel_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center_vertical"
+                        android:text="@string/editing_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/my_hotels_relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg2"
+                    android:layout_below="@id/gray_relative1">
+                    <TextView
+                        android:id="@+id/my_hotels_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center_vertical"
+                        android:text="@string/my_hotels"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/information_linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_hotels_relative1"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/basic_information_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/bg"
+                        android:text="@string/basic_information"
+                        android:gravity="clip_vertical"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/photo_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/bg"
+                        android:layout_below="@id/basic_information_btn1"
+                        android:text="@string/photo"
+                        android:gravity="clip_vertical"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/rooms_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/bg"
+                        android:text="@string/rooms"
+                        android:layout_below="@id/photo_btn1"
+                        android:gravity="clip_vertical"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:enabled="false"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/upload_photos_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/information_linear1"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/bg3"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/upload_photos_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center_vertical"
+                        android:text="@string/name_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/photos_object_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/photos_object"
+                        android:layout_below="@id/upload_photos_text"/>
+                    <EditText
+                        android:id="@+id/upload_photos_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_below="@+id/photos_object_text"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_bg3_3"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:textColor="@color/black"
+                        android:hint="@string/photo_hotel"
+                        android:paddingHorizontal="10dp"/>
+                    <Button
+                        android:id="@+id/btn_download_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:backgroundTint="@color/bg12"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:layout_below="@+id/upload_photos_edit"
+                        android:text="@string/download_device"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/save_hotel_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/upload_photos_relative"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/bg3"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp">
+                    <Button
+                        android:id="@+id/btn_save_hotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:backgroundTint="@color/bg12"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/save_hotel"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        tools:ignore="NotSibling" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_marginTop="15dp">
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBookingPass">
+
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessagesPass">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ObjectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/object"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableTop="@drawable/facilities_house"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/CalendarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:onClick="OnCalendar"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/calendar"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/calendar"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

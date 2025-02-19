@@ -1,0 +1,414 @@
+<resources>
+    <string name="app_name">no_name_hochu _babok</string>
+    <string name="nadpis">Куда...</string>
+    <string name="text_for_view">Популярные направления</string>
+    <string name="search">Поиск</string>
+    <string name="heart">Избранное</string>
+    <string name="booking">Брони</string>
+    <string name="messages">Сообщения</string>
+    <string name="profile">Профиль</string>
+    <string name="back">Назад</string>
+
+    <string name="setting">Настройки</string>
+    <string name="support">Служба поддержки</string>
+    <string name="information">О приложении</string>
+    <string name="exit">Выйти из аккаунта</string>
+
+    <string name="notifications">Уведомления</string>
+    <string name="contacts">Контакты</string>
+    <string name="color_application">Тема приложения</string>
+    <string name="time_zone">Часовой пояс</string>
+    <string name="delete_account">Удаление аккаунта</string>
+    <string name="delete_account1">Удалить аккаунт</string>
+
+    <string name="reservations">Бронирования</string>
+    <string name="balance">Баланс</string>
+    <string name="personal_recommendations">Персональные рекомендации</string>
+    <string name="useful_info">Полезная информация</string>
+
+    <string name="reservations1">Сообщать, когда хозяин подтверждает или отменяет бронь, изменяет её условия или присылает сообщения</string>
+    <string name="balance1">Сообщать о начислении бонусов и других измениях баланса</string>
+    <string name="personal_recommendations1">Важные напоминания и рекомендации от сервиса ... которые подобраны сцениально для вас </string>
+    <string name="useful_info1">Промокоды, подборки направлений, лучшие варианты проживания. Бонусные рекламы и маркетинговые акции</string>
+
+    <string name="contacts1">Вы можете добавить дополнительный номер телефона для уведомлений и авторизации</string>
+
+    <string name="number_phone">Номер телефона</string>
+    <string name="Add_phone_number">Добавить номер телефона</string>
+
+    <string name="viewed">Просмотренные</string>
+
+    <string name="password_recovery">Забыли пароль?</string>
+    <string name="remember">Запомнить меня</string>
+    <string name="admin">Для админа</string>
+    <string name="client">Для клиентов</string>
+
+
+    <string name="text_for_reg">Чтобы пользоваться этой функцией – войдите. </string>
+    <string name="in_reg">Войти или зарегистрироваться</string>
+
+    <string name="regHeartText">Отмечайте сердечком те варианты, которые вам понравились.</string>
+    <string name="regBookingText">У вас пока нет броней.</string>
+    <string name="regMessagesText">Здесь будут ваши сообщения.</string>
+    <string name="startSearch">Начать поиск</string>
+
+
+    //для сдачи хат
+    <string name="pass_flat">Сдать объект</string>
+    <string name="my_object">Мои объекты</string>
+    <string name="object">Объекты</string>
+    <string name="calendar">Календарь</string>
+    <string name="new_announcement">Новое объявление</string>
+    <string name="not_announcement">У вас нет размещенных объявление</string>
+    <string name="instruction">Как пользоваться?</string>
+    <string name="instruction_information">О странице «Мои объекты» </string>
+    <string name="clear">Понятно </string>
+    <string name="restart_btn">Сбросить фильтры </string>
+
+
+    <string name="text_my_object_1">Для редактирования не нужно открывать каждый объект по отдельности </string>
+    <string name="text_my_object_2">Все правки можно внести в удобное боковое меню </string>
+    <string name="text_my_object_3">Можно быстро задать общие настройки для разных объектов </string>
+    <string name="text_my_object_4">Для редактирования выберите объект (или несколько), нажмите на кнопку «Редактировать»  </string>
+
+    <string name="filter">Фильтры </string>
+
+    <string name="throw_off">Сбросить </string>
+    <string name="accept">Применить </string>
+    <string name="filter_booking">Фильтры броней </string>
+    <string name="filter_date">Фильтровать по дате </string>
+    <string name="not_selected">Не выбрано </string>
+
+    <string name="creation">Создание </string>
+    <string name="check_in">Заезда </string>
+    <string name="departure">Отъезда </string>
+    <string name="stage">По стадиям </string>
+
+    <string name="prepayment">Ожидание предоплаты </string>
+
+    <string name="upcoming_arrivals">Ближайшие заезды </string>
+    <string name="upcomin_departures">Ближайшие отъезды </string>
+    <string name="feedback">Ожидается отзыв </string>
+    <string name="completed">Завершено </string>
+    <string name="cancelled">Отменено </string>
+
+    <string name="by_objects">По объектам </string>
+    <string name="select_objects">Выбрать объекты </string>
+
+
+    <string name="the_arrows">Сначала новые </string>
+    <string name="old_ones">Сначала старые </string>
+    <string name="check_in_date_ascending">Дата заезда, по возрастанию</string>
+    <string name="check_in_date_descending">Дата заезда, по убыванию </string>
+    <string name="departure_date_in_ascending">Дата отъезда, по возрастанию </string>
+    <string name="departure_date_descending">Дата отъезда, по убыванию </string>
+
+    <string name="all_messages">Все сообщения </string>
+    <string name="active_bookings">Активные бронирования </string>
+    <string name="archived_bookings">Архивные бронирования </string>
+    <string name="filter_messages">Фильтры сообщений </string>
+
+    <string name="stage_booking">Стадия брони </string>
+    <string name="type_messages">Тип сообщений </string>
+
+    <string name="unread">Непрочитанные </string>
+    <string name="require_action">Требуют действий </string>
+    <string name="request">Запрос</string>
+
+    <string name="select_object">Выбрать объект</string>
+    <string name="select_object_edit_text">Поиск объектов по номеру, адресу или названию </string>
+    <string name="select_all">Выбрать все </string>
+    <string name="not_filter">Без фильтра</string>
+
+
+    <string name="account_management">Управление аккаунтом</string>
+    <string name="editing_profile">Редактирование профиля</string>
+    <string name="password_security">Пароль и безопасность</string>
+    <string name="data_management">Управление данными</string>
+    <string name="leave_account">Выйти из аккаунта</string>
+
+    <string name="editing_profile1">Редактировать профиль</string>
+    <string name="name">Имя</string>
+    <string name="choose_gender">Выберете пол</string>
+    <string name="date_birth">Дата рождения</string>
+    <string name="personal_data">Личные данные</string>
+
+    <string name="location">Местоположение</string>
+    <string name="town">Город</string>
+    <string name="additionally">Дополнительно</string>
+    <string name="link_account">Привязать аккаунт</string>
+    <string name="entrance_security">Вход и безопастность</string>
+
+    <string name="security_notifications">Уведомления безопасности</string>
+    <string name="telegram">Telegram</string>
+    <string name="email">Электронная почта</string>
+    <string name="sms">SMS</string>
+    <string name="push">Push</string>
+    <string name="data_changed">Сообщать, если изменились данные для входа</string>
+
+
+    <string name="delete_account_accept">После удаления аккаунта вы не сможете войти в свой аккаунт, ваши персональные данные будут удалены в соответствии с действующим законодательством</string>
+    <string name="what_delete_account">Почему вы хотите удалить аккаунт?</string>
+    <string name="discontent">Не устраивает ваш сервис</string>
+    <string name="not_clear">Мне не понятно, как обрабатываются мои персональные данные в вашем сервесе</string>
+    <string name="deleting_duplicate">Удаляю дубликат аккаунта</string>
+    <string name="rarely_use">Редко пользуюсь вашим сервисом</string>
+    <string name="other">Другое</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="describe_reason">Опишите причину</string>
+
+    <string name="confirm_delete_account">Вы действительн охотите удалить аккаунт?</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="creation_object">Создание объекта</string>
+    <string name="free_placement">Бесплантное размещение обьявлений, оплата только за успешные бронирования</string>
+    <string name="what_hand_over">Что будете сдавать?</string>
+
+    <string name="rooms_places">номера, спальные места</string>
+    <string name="in_hotel">в отеле, гостевом доме или хостеле</string>
+
+    <string name="apartments">квартиры, апартаменты</string>
+    <string name="entirely">целиком</string>
+
+    <string name="house">дома, коттеджи</string>
+    <string name="separate_rooms">отдельные комнаты</string>
+
+    <string name="ad_title">Выберите заголовок объявления:</string>
+
+    <string name="hotel">Отель</string>
+    <string name="mini_hotel">Мини-гостиница</string>
+    <string name="guest_house">Гостевой дом</string>
+    <string name="apart_hotel">Апарт-отель</string>
+    <string name="hostel">Хостел</string>
+    <string name="economy_class_hotel">Отель эконом-класса</string>
+    <string name="capsule_hotel">Капсульный отель</string>
+    <string name="recreation_center">База отдыха</string>
+    <string name="boarding_house">Пансионат</string>
+    <string name="sanatorium">Санаторий</string>
+    <string name="apartment">Апартамент</string>
+    <string name="glamping">Глэмпинг</string>
+    <string name="hotel_guest_house">Гостиница</string>
+    <string name="boutique_hotel">Бутик-отель</string>
+    <string name="park_hotel">Парк-отель</string>
+    <string name="eco_hotel">Эко-отель</string>
+
+    <string name="location_object">Укажите мостоположение объекта:</string>
+
+    <string name="enter_town">Введите город</string>
+    <string name="resume">Продолжить</string>
+
+
+    <string name="flat">Квартира</string>
+    <string name="atelier">Студия</string>
+
+    <string name="cottage">Коттедж</string>
+    <string name="home">Дом</string>
+    <string name="villa">Вилла</string>
+    <string name="part_house">Часть дома с отдельным входом</string>
+    <string name="boathouse">Эллинг</string>
+    <string name="village_house">Деревенский дом</string>
+    <string name="townhouse">Таунхаус</string>
+    <string name="floor_house">Целый этаж в доме</string>
+    <string name="guesthouse">Гестхаус</string>
+    <string name="chalet">Шале</string>
+    <string name="bungalow">Бунгало</string>
+    <string name="mobile_home">Дом на колесах</string>
+    <string name="mansion">Особняк</string>
+    <string name="yacht">Яхта</string>
+    <string name="country_house">Дача</string>
+
+    <string name="room_apartment">Комната в квартире</string>
+    <string name="room_private_house">Комната в частном доме</string>
+    <string name="room_cottage">Комната в коттедже</string>
+    // отсюда
+    <string name="editing_hotel">Редактирование отеля</string>
+    <string name="my_hotels">Мои гостиницы → Отель «» </string>
+    <string name="basic_information">1. Основная информация</string>
+    <string name="photo">2. Фотографии</string>
+    <string name="rooms">3. Номера</string>
+
+    <string name="name_hotel">Название отеля</string>
+    <string name="information_hotel">Отель «» - это название будут видеть гости при поиске (если у вас нет названия, можете указать названиен улицы, номер дома) </string>
+
+    <string name="address">Адрес</string>
+    <string name="type_street">тип улицы</string>
+    <string name="choose">выберите</string>
+    <string name="name_street">название улицы</string>
+    <string name="home1">дом</string>
+    <string name="body">корпус</string>
+
+    <string name="category">Категория</string>
+    <string name="number_stars">Укажите количество звезд, присвоенных вашему объекту по Системе классификации гостиниц и иных средств размешения</string>
+    <string name="stardom">звездность</string>
+    <string name="certificate_number">номер свидетельства</string>
+
+
+    <string name="internet">Интернет</string>
+    <string name="internet_access">доступ к интернету</string>
+    <string name="service_internet">Услуга, на которую чаше всего обращают внимание гости при поиске жилья</string>
+
+    <string name="parking">Парковка</string>
+    <string name="information_parking">Заполните информацию о парковке, на которой гости могут оставить транспортное средство</string>
+    <string name="parking_availability">Наличия парковки</string>
+    <string name="private_public_parking">Есть ли у вашего объекта собственная или общественная парковка</string>
+
+    <string name="intelligence">Сведения</string>
+    <string name="year_construction">год постройки</string>
+    <string name="number_rooms">количество номеров</string>
+    <string name="check_after">заезд после</string>
+    <string name="departure_before">отъезд до</string>
+    <string name="smoking">курение на теретории</string>
+    <string name="accepted_fee">принимаемая плата</string>
+
+    <string name="facilities_services">Удобства и услуги</string>
+    <string name="restaurant">ресторан</string>
+    <string name="room_service">доставка в номер</string>
+    <string name="bar_counter">барная стойка</string>
+    <string name="front_desk">кругослуточная стойка регистрации</string>
+    <string name="sauna">сауна</string>
+    <string name="fitness_room">фитнес-зал</string>
+    <string name="garden">сад</string>
+    <string name="terrace">терраса</string>
+    <string name="spa_center">спа-центр</string>
+    <string name="football_field">футбольное поле</string>
+    <string name="tennis_court">теннисный корт</string>
+    <string name="golf">гольф</string>
+    <string name="aqua_park">аквапарк</string>
+    <string name="outdoor_swimming_pool">открытый бассейн</string>
+    <string name="indoor_swimming_pool">крытый бассейн</string>
+    <string name="jacuzzi">джакузи</string>
+    <string name="private_beach">собственный пляж</string>
+    <string name="playground">игровая площадка</string>
+    <string name="elevator">лифт</string>
+    <string name="ramp">пандус</string>
+    <string name="children_pool">детский бассейн</string>
+    <string name="bath_tub">банный чан</string>
+    <string name="heated_swimming_pool">бассейн с подогревом</string>
+    <string name="meeting_room">переговорная</string>
+    <string name="conference_room">конференц-зал</string>
+    <string name="luggage_storage">камера хранения</string>
+    <string name="laundry">прачечная</string>
+    <string name="business_center">бизнес-центр</string>
+
+    <string name="food">Питание</string>
+    <string name="information_food">Информация о питании появится во всех категориях номеров</string>
+    <string name="all_over">Все включено</string>
+    <string name="cost_accommodation">В стоимость проживания включены завтрак, обед и ужин</string>
+    <string name="breakfast">завтрак</string>
+    <string name="lunch">обед</string>
+    <string name="dinner">ужин</string>
+
+    <string name="service_fee">Плата за дополнительные услуги</string>
+    <string name="information_service_fee">Это дополнительные услуги, их можно предоставить только по запросу гостя или с его согласия.
+    Стоимость этих услуг не включается в расчет общей цены при бронировании. Если у вас есть обязательная платная уборка,
+    укажите ее стоимость при редактировании категории номера.</string>
+    <string name="cleaning">уборка</string>
+    <string name="linen">постельно белье</string>
+    <string name="reporting_documents">отчетные документы</string>
+
+
+    <string name="transfer">Трансфер</string>
+    <string name="information_transfer">Отметьте этот пункт, если вы предоставляете гостям трансфер к месту проживания (например, от вокзала или аэропорта)</string>
+    <string name="provided_transfer">предоставляется трансфер</string>
+
+    <string name="detailed_description">Подробное описание</string>
+    <string name="view_recommendations">Посмотрите наши рекомендации и добовьте описание объекта</string>
+
+    <string name="other_resources">Ваши объекты на других ресурсах</string>
+    <string name="information_other_resources">Укажите ссылки на ваш объект на других ресурсах, мы сможем использовать некоторую информацию
+    оттуда о вашем объекте</string>
+    <string name="specify_links">укажите ссылки на ваш объект на размещения, каждую на новой строке</string>
+
+    <string name="recommendations">наши рекомендации</string>
+    <string name="recommendations1">Мы тщательно изучили популярные объекты и можем точно сказать, что в описании лучше добавить:</string>
+    <string name="recommendations2">Информацию о максимальном числе гостей, количестве комнат, ресонте и преимуществах расположения объекта.</string>
+    <string name="recommendations3">Рассказать об удобствах, спальныхместах и их количестве.</string>
+    <string name="recommendations4">Описание кухонной зоны: наличие плиты, посуды, микроволновки или духовки, посудомоечной машины, чайника и т.д.</string>
+    <string name="recommendations5">Информацию об интернете и технике: wi-fi, ТВ, кондиционер,, стиральная машина, утюг, фен и т.д.</string>
+    <string name="recommendations6">Другую информацию о преимуществах объекта: наличие парковки, зоны отдыха во дворе.</string>
+    <string name="recommendations7">Короткий рассказ о правилах проживания, возможнотсях заселения с детьми или питомцами.</string>
+
+    <string name="upload_photos">Загрузите фотографии</string>
+    <string name="photos_object">Добавьте фото объекта, относящиеся к территории, зонам общего пользования и т.д. Фото номеров вы можете добавить на следующих шагах</string>
+    <string name="download_device">загрузить с устройиства</string>
+    <string name="photo_hotel">фото отеля</string>
+    <string name="save_hotel">сохранить отель</string>
+    <string name="new_year">1900 - 2025</string>
+
+    <string name="boulevard">бульвар</string>
+    <string name="road">дорога</string>
+    <string name="track">дорожка</string>
+    <string name="residential_area">жилмассив</string>
+    <string name="alleyway">переулок</string>
+    <string name="square">площадь</string>
+    <string name="transit">проезд</string>
+    <string name="avenue">проспект</string>
+    <string name="route">трасса</string>
+    <string name="street">улица</string>
+    <string name="alley">аллея</string>
+    <string name="kilometer">километр</string>
+    <string name="line">линия</string>
+    <string name="embankment">набережная</string>
+    <string name="clearing">просека</string>
+    <string name="country_lane">проселок</string>
+    <string name="alley_alleyway">проулок</string>
+    <string name="descent">спуск</string>
+    <string name="dead_end">тупик</string>
+    <string name="highway">шоссе</string>
+
+    <string name="to_close">закрыть</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+
+    <string name="yes_fee">да, платно</string>
+    <string name="yes_not_fee">да, бесплатно</string>
+    <string name="no">нет</string>
+
+    <string name="free_parking">есть платная парковка </string>
+    <string name="not_free_parking">есть бесплатная парковка</string>
+    <string name="not_parking">нет парковки</string>
+
+    <string name="zero_zero">00:00</string>
+    <string name="hour">01:00</string>
+    <string name="two_hours">02:00</string>
+    <string name="three_hours">03:00</string>
+    <string name="four_hours">04:00</string>
+    <string name="five_hours">05:00</string>
+    <string name="six_hours">06:00</string>
+    <string name="seven_hours">07:00</string>
+    <string name="eight_hours">08:00</string>
+    <string name="nine_hours">09:00</string>
+    <string name="ten_hours">10:00</string>
+    <string name="eleven_hours">11:00</string>
+    <string name="twelve_hours">12:00</string>
+    <string name="thirteen_hours">13:00</string>
+    <string name="fourteen_hours">14:00</string>
+    <string name="fifteen_hours">15:00</string>
+    <string name="sixteen_hours">16:00</string>
+    <string name="seventeen_hours">17:00</string>
+    <string name="eighteen_hours">18:00</string>
+    <string name="nineteen_hours">19:00</string>
+    <string name="twenty_hours">20:00</string>
+    <string name="twenty_one_hours">21:00</string>
+    <string name="twenty_two_hours">22:00</string>
+    <string name="twenty_three_hours">23:00</string>
+
+    <string name="forbidden">запрещено</string>
+    <string name="allowed_places">разрешено в специально отведенных местах</string>
+    <string name="allowed_all">разрешено везде</string>
+
+    <string name="cash_only">только наличные</string>
+    <string name="credit_cards_only">только кредитные карты</string>
+    <string name="cash_and_cards">наличные и карты</string>
+    <string name="any_way">любой способ</string>
+
+    <string name="ScrollView">ScrollView</string>
+    <string name="EditText">EditText</string>
+    <string name="TextView">TextView</string>
+</resources>

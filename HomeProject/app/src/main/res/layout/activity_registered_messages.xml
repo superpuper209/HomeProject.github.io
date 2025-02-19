@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/windows_reg_messages"
+    tools:context=".User.RegisteredMessagesActivity"
+    android:background="@color/bg">
+
+    <!--android.support.design.widget.FloatingActionButton -->
+    <RelativeLayout
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LineBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/bg12"
+        android:clickable="true"
+        android:contentDescription="@string/messages"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/sendbutton">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LineBtn"
+        android:layout_toLeftOf="@+id/btnSend"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/messageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите сообщение..."
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@id/text_message_layout"
+       >
+
+       <ListView
+           android:id="@+id/list_view_message"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:divider="@android:color/transparent"
+           android:dividerHeight="10dp"
+           android:layout_marginBottom="16dp"/>
+   </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnSearch">
+
+            <ImageView
+                android:id="@id/SearchBtn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#000000"
+                android:contentDescription="@string/search"
+                app:srcCompat="@drawable/search1"
+
+
+                tools:ignore="TouchTargetSizeCheck">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/HeartBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnHeart"
+            >
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/heart1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/heart"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBooking">
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/MessagesBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessages">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile"
+           >
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

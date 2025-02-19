@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.EditingProfileActivity"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/black_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/grey_relative_filter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg12"
+        android:layout_below="@+id/black_relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/editing_profile1"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_editing_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grey_relative_filter"
+        android:background="@color/bg">
+
+        <TextView
+            android:id="@+id/text_personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/personal_data"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/btn_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_bg"
+            android:hint="@string/name"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text_personal_data"/>
+        <EditText
+            android:id="@+id/btn_choose_gender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_bg"
+            android:hint="@string/choose_gender"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_name"/>
+        <EditText
+            android:id="@+id/btn_date_birth"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_bg"
+            android:hint="@string/date_birth"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_choose_gender"
+            android:drawableRight="@drawable/calendar"/>
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/location"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/btn_date_birth"/>
+
+        <EditText
+            android:id="@+id/btn_date_birth1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_bg"
+            android:hint="@string/town"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text_location"/>
+
+        <TextView
+            android:id="@+id/text_additionally"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/additionally"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/btn_date_birth1"/>
+
+        <EditText
+            android:id="@+id/btn_date_birth11"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_bg"
+            android:hint="@string/time_zone"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text_additionally"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/info_editing_profile"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg12">
+
+        <TextView
+            android:id="@+id/text_link_account"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/link_account"
+            android:gravity="center_vertical"
+            android:textSize="25dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

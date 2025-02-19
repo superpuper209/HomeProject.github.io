@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.ProfileSettingActivity"
+    android:background="@color/bg">
+
+
+    <RelativeLayout
+        android:id="@+id/setting_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/back"
+            android:scrollbarSize="20dp"
+            app:srcCompat="@drawable/qwe"
+            tools:ignore="TouchTargetSizeCheck"
+            android:background="@color/bg"
+            android:onClick="OnBackSetting"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:text="@string/setting"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"/>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/setting_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp">
+
+            <FrameLayout
+                android:id="@+id/notifications"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:onClick="OnNotifications">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/notifications"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:drawableLeft="@drawable/notifications"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/contacts"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/notifications"
+                android:onClick="OnContacts">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/contacts"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:drawableLeft="@drawable/contacts"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/color_application"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/contacts">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/color_application"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:drawableLeft="@drawable/color_application"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/color_application"
+                android:onClick="OnTimeZone">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/time_zone"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:drawableLeft="@drawable/time_zone"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/time_zone">
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/delete_account"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:drawableLeft="@drawable/delete_account"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_account_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/bg12"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/delete_account">
+
+                <Button
+                    android:id="@+id/account_management_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center|left"
+                    android:text="@string/account_management"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:backgroundTint="@color/bg"
+                    android:drawableLeft="@drawable/menu_pass"
+                    android:visibility="visible"/>
+                <Button
+                    android:id="@+id/editing_profile_bnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center|left"
+                    android:text="@string/editing_profile"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:backgroundTint="@color/bg"
+                    android:visibility="gone"
+                    android:onClick="OnEditProfile"/>
+                <Button
+                    android:id="@+id/password_security_bnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center|left"
+                    android:text="@string/password_security"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:backgroundTint="@color/bg"
+                    android:visibility="gone"
+                    android:onClick="OnPasswordSecurity"/>
+                <Button
+                    android:id="@+id/data_management_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center|left"
+                    android:text="@string/data_management"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:backgroundTint="@color/bg"
+                    android:visibility="gone"
+                    android:onClick="OnDataManagement"/>
+                <Button
+                    android:id="@+id/leave_account_bnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center|left"
+                    android:text="@string/leave_account"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:backgroundTint="@color/bg"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/setting_notifications_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/back"
+            android:scrollbarSize="20dp"
+            app:srcCompat="@drawable/qwe"
+            tools:ignore="TouchTargetSizeCheck"
+            android:background="@color/bg"
+            android:clickable="true"
+            android:onClick="OnBackNotifications"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="@string/notifications"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"/>
+
+        <FrameLayout
+            android:id="@+id/reservations_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="100dp">
+
+            <Switch
+                android:id="@+id/switch_reservations"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/reservations_text0"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="@string/reservations"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/reservations_text1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/reservations1"
+                android:textColor="@color/bg"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/balance_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/reservations_frameLayout">
+
+            <Switch
+                android:id="@+id/switch_balance"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+            <TextView
+                android:id="@+id/balance_text0"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="@string/balance"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/balance_text1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/balance1"
+                android:textColor="@color/bg"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/personal_recommendations_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/balance_frameLayout">
+
+            <Switch
+                android:id="@+id/switch_personal_recommendations"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/personal_recommendations_text0"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:text="@string/personal_recommendations"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/personal_recommendations_text1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/personal_recommendations1"
+                android:textColor="@color/bg"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/useful_info_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/personal_recommendations_frameLayout">
+
+            <Switch
+                android:id="@+id/switch_useful_info"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/useful_info_text0"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:text="@string/useful_info"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/useful_info_text1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/useful_info1"
+                android:textColor="@color/bg"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/add_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/back"
+            android:scrollbarSize="20dp"
+            app:srcCompat="@drawable/qwe"
+            tools:ignore="TouchTargetSizeCheck"
+            android:background="@color/bg"
+            android:onClick="OnBackContacts"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="@string/contacts"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:text="@string/number_phone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_below="@id/contacts_frameLayout"/>
+
+
+        <FrameLayout
+            android:id="@+id/contacts_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="85dp"
+            android:layout_marginHorizontal="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/circle_phone"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="left"
+                android:text="@string/contacts1"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@id/contacts_frameLayout"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/border_bg"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/circle_plus"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/Add_phone_number"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/time_zone_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/bg"
+            android:contentDescription="@string/back"
+            android:scrollbarSize="20dp"
+            app:srcCompat="@drawable/qwe"
+            tools:ignore="TouchTargetSizeCheck"
+            android:onClick="OnBackTimeZone"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="@string/time_zone"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:layout_marginStart="60dp"
+            android:textSize="20dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view_time_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for items..."
+            android:background="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="80dp"/>
+
+        <ListView
+            android:id="@+id/list_view_time_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_view_time_zone"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

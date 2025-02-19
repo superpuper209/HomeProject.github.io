@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="xc">#00000000</color>
+    <color name="bg">#d7cece</color>
+    <color name="bg12">#817d7d</color>
+    <color name="bg2">#ABABAB</color>
+    <color name="red">#DD1313</color>
+    <color name="blue">#00548F</color>
+    <color name="blue1">#76FEFE</color>
+    <color name="bg3">#E8E3E3</color>
+
+
+    <color name="active_color1">#FFFFFFFF</color>
+    <color name="inactive_color1">#ABABAB</color>
+
+    <color name="active_color">#FF000000</color>
+    <color name="inactive_color">#817d7d</color>
+
+
+ <!--эти две строчки для кнопок в бронировании -->
+    <color name="color_button_default">#d7cece</color>
+    <color name="color_button_pressed">#FFFFFFFF</color>
+</resources>

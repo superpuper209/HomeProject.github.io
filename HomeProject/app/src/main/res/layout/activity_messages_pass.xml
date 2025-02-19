@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagesPassActivity"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/gray_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg12">
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/my_messages_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layout_below="@id/gray_relative"
+    android:layout_above="@id/LineBtn"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/text_messages_pass"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:text="@string/messages"
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/my_messages_filter_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:layout_below="@+id/text_messages_pass">
+
+        <Button
+            android:id="@+id/filter_btn_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/setting"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_marginEnd="10dp"
+            android:onClick="OnSettingMessages"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/btn_info_messages_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg">
+
+
+            <Button
+                android:id="@+id/all_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="start"
+                android:text="@string/all_messages"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/active_bookings"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/active_bookings"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="TextSizeCheck"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/archived_bookings"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/archived_bookings"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="TextSizeCheck"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/setting_messages_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layout_below="@id/gray_relative"
+    android:layout_above="@id/LineBtn"
+    android:visibility="invisible">
+
+
+
+    <RelativeLayout
+        android:id="@+id/black_relative_messages"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/filter_messages"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_type_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_messages"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/black_relative_messages"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginStart="40dp"/>
+
+    <FrameLayout
+        android:id="@+id/frame_unread"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/text_type_messages"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/prepayment"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_require_action"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/frame_unread"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/upcoming_arrivals"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_require_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_stage_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stage_booking"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/frame_require_action"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"/>
+
+    <FrameLayout
+        android:id="@+id/frame_prepayment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/text_stage_booking"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/prepayment"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_prepayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_upcoming_arrivals"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/frame_prepayment"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/upcoming_arrivals"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_upcoming_arrivals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_upcomin_departures"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/frame_upcoming_arrivals"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/upcomin_departures"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_upcomin_departures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/frame_upcomin_departures"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/feedback"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_completed"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg"
+        android:layout_below="@id/frame_feedback"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:text="@string/completed"
+            android:layout_gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginStart="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_cancelled"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/frame_completed"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:text="@string/cancelled"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cancelled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_by_objects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/object"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/frame_cancelled"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/btn_tp_filter_calendar1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/border_bg"
+        android:hint="@string/not_filter"
+        android:paddingHorizontal="15dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_by_objects"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/the_arrows"
+        android:onClick="OnSelectObject"/>
+
+    <Button
+        android:id="@+id/leave_info_my_object"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/aleo_semibold"
+        android:gravity="center"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="OnBackMessages" />
+</RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="invisible">
+        <Button
+            android:id="@+id/throw_btn_booking1"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:text="@string/throw_off"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/accept_btn_booking1"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:text="@string/accept"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible"
+        >
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBookingPass">
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessagesPass">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ObjectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:onClick="OnObject">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/facilities_house"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/object"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/CalendarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:onClick="OnCalendar"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/calendar"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/calendar"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

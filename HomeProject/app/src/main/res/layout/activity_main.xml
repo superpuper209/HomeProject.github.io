@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.MainActivity"
+    android:background="@color/bg">
+
+<RelativeLayout
+    android:id="@+id/curtain"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/black"
+    android:visibility="visible">
+
+    <FrameLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/xc"
+        android:layout_marginHorizontal="50dp">
+
+        <EditText
+            android:id="@+id/btn_tp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border_white"
+            android:hint="Куда едем?"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="15dp"
+            android:onClick="goCity" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/curtainText1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="131dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:text="СУТОЧНО.РУ"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/curtainText2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/curtainText1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="111dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:text="Найдем, где остановиться!"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck"
+        android:gravity="center"/>
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/curtain"
+        android:layout_above="@id/LineBtn"
+        android:background="@color/bg">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/bg12"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:text="@string/viewed"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="Prof1">
+
+            <ImageView
+                android:id="@id/SearchBtn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#000000"
+                android:contentDescription="@string/search"
+                app:srcCompat="@drawable/search1"
+                tools:ignore="TouchTargetSizeCheck">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/HeartBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/heart1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/heart"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBooking">
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/MessagesBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessages">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

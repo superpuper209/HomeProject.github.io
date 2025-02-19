@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http - FORBIDDEN - schemas.android - FORBIDDEN - /apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    tools:ignore="NamespaceTypo">
+
+        <translate
+            android:duration="300"
+            android:fromXDelta="0%"
+            android:fromYDelta="0%"
+            android:toXDelta="-100%"
+            android:toYDelta="0%" />
+
+</set>

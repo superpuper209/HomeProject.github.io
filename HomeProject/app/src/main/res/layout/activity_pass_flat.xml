@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pass_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.PassFlatActivity"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/black_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/my_object_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_below="@id/black_relative"
+        android:layout_above="@id/LineBtn"
+        android:visibility="visible">
+
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:text="@string/my_object"
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeBtnAnnouncement"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:id="@+id/newAnnouncementBtn"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/new_announcement"
+            android:textColor="@color/blue"
+            android:onClick="OnAnnouncement"/>
+
+        <Button
+            android:id="@+id/instructionBtn"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/instruction"
+            android:textColor="@color/blue"
+            android:layout_below="@id/newAnnouncementBtn"
+            android:onClick="OnInstruction"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/relativeBtnAnnouncement"
+        android:text="@string/not_announcement"
+        android:gravity="center"
+        android:fontFamily="@font/aleo_semibold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_my_object"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_below="@id/black_relative"
+        android:layout_above="@id/LineBtn"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:id="@+id/instruction_information"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/instruction_information"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/leave_info_my_object"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:onClick="OnLeaveInstruction"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/instruction_information"
+            android:layout_marginTop="30dp"
+            android:background="@color/bg">
+
+            <TextView
+                android:id="@+id/text_my_object_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/text_my_object_1"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="40dp"/>
+            <TextView
+                android:id="@+id/text_my_object_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/text_my_object_2"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/text_my_object_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="40dp"/>
+            <TextView
+                android:id="@+id/text_my_object_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/text_my_object_3"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/text_my_object_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="40dp"/>
+            <TextView
+                android:id="@+id/text_my_object_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:text="@string/text_my_object_4"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/text_my_object_3"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="20dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBookingPass">
+
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessagesPass">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black"
+               >
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ObjectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/object"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableTop="@drawable/facilities_house"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/CalendarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:onClick="OnCalendar"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/calendar"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/calendar"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

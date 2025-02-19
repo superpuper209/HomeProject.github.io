@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.No_name_hochu_babok"
+        tools:targetApi="31">
+        <activity
+            android:name=".CeationObject.HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CeationObject.NewAnnouncementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DataManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.PasswordSecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.EditingProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.SelectObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessagesPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.PassFlatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ProfileSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RegisteredMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RegisteredBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RegisteredHeartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.City"
+            android:exported="false" />
+        <activity
+            android:name=".User.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

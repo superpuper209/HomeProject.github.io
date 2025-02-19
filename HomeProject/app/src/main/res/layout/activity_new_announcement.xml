@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CeationObject.NewAnnouncementActivity"
+    android:background="@color/bg">
+
+
+    <RelativeLayout
+        android:id="@+id/black_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/LineBtn"
+        android:layout_below="@id/black_relative"
+        android:contentDescription="@string/ScrollView">
+        <RelativeLayout
+            android:id="@+id/main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+            <RelativeLayout
+                android:id="@+id/my_object_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/bg"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true">
+
+
+                <TextView
+                    android:id="@+id/creation_object_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/creation_object"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/free_placement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/creation_object_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/free_placement"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/what_hand_over_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/free_placement_text"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/what_hand_over"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/rooms_places_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/what_hand_over_text"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rooms_places_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/rooms_places"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/in_hotel"
+                        android:textColor="@color/bg12"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apartments_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rooms_places_linear"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/apartments_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/apartments"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/entirely"
+                        android:textColor="@color/bg12"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/house_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apartments_linear"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/house_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/entirely"
+                        android:textColor="@color/bg12"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/separate_rooms_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/house_linear"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg3_2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/separate_rooms_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/separate_rooms"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:gravity="center"
+                        android:text="@string/entirely"
+                        android:textColor="@color/bg12"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+
+
+            <RelativeLayout
+                android:id="@+id/ad_title_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_object_relative"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/ad_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/ad_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_ad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ad_title_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/bg"
+                    android:buttonTint="@color/color_state_list"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/mini_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/mini_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/guest_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/guest_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/apart_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/apart_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/hostel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/hostel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/economy_class_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/economy_class_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/capsule_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/capsule_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/recreation_center_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/recreation_center"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/boarding_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/boarding_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/sanatorium_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/sanatorium"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/apartment_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/apartment"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/glamping_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/glamping"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/hotel_guest_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/hotel_guest_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/boutique_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/boutique_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/park_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/park_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/eco_hotel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/eco_hotel"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/location_object_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroup_ad_title"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/location_object"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/town_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location_object_text"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/town"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/btn_enter_town"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/town_text"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:hint="@string/enter_town"
+                    android:inputType="text"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/black" />
+
+
+                <Button
+                    android:id="@+id/btn_resume"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/btn_enter_town"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:enabled="false"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/resume"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+            <RelativeLayout
+                android:id="@+id/apartments_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_object_relative"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:id="@+id/ad_title_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/ad_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_apartments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ad_title_text1"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/bg"
+                    android:buttonTint="@color/color_state_list"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/flat_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/flat"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                    <RadioButton
+                        android:id="@+id/apartment_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/apartment"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/atelier_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/atelier"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/location_object_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroup_apartments"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/location_object"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/town_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location_object_text1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/town"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/btn_enter_town1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/town_text1"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:hint="@string/enter_town"
+                    android:inputType="text"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/black" />
+
+
+                <Button
+                    android:id="@+id/btn_resume1"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/btn_enter_town1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:enabled="false"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/resume"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+
+            <RelativeLayout
+                android:id="@+id/house_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_object_relative"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:id="@+id/ad_title_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/ad_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ad_title_text2"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/bg"
+                    android:buttonTint="@color/color_state_list"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/cottage_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/cottage"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                    <RadioButton
+                        android:id="@+id/home_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/home"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/villa_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/villa"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/part_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/part_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/boathouse_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/boathouse"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/village_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/village_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/townhouse_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/townhouse"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/floor_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/floor_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/guesthouse_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/guesthouse"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/chalet_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/chalet"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/bungalow_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/bungalow"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/mobile_home_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/mobile_home"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/mansion_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/mansion"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/yacht_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/yacht"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/country_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/country_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/location_object_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroup_house"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/location_object"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/town_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location_object_text2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/town"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/btn_enter_town2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/town_text2"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:hint="@string/enter_town"
+                    android:inputType="text"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/black" />
+
+
+                <Button
+                    android:id="@+id/btn_resume2"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/btn_enter_town2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:enabled="false"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/resume"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+            <!---РЕЕЕЕЕЕЕЕЕЕЕЛАААААААААААААТИИИИИИИИИИИИВВВВВВВВ-->
+
+
+
+            <RelativeLayout
+                android:id="@+id/separate_rooms_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_object_relative"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:id="@+id/ad_title_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/ad_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_separate_rooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ad_title_text3"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/bg"
+                    android:buttonTint="@color/color_state_list"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/room_apartment_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/room_apartment"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                    <RadioButton
+                        android:id="@+id/room_private_house_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/room_private_house"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                    <RadioButton
+                        android:id="@+id/room_cottage_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bg3_2"
+                        android:fontFamily="@font/aleo_semibold"
+                        android:text="@string/room_cottage"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/location_object_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroup_separate_rooms"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/location_object"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/town_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location_object_text3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/town"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/btn_enter_town3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/town_text3"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bg"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:hint="@string/enter_town"
+                    android:inputType="text"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_resume3"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/btn_enter_town3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/bg12"
+                    android:enabled="false"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/resume"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/BookingBtn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnBookingPass">
+
+
+            <ImageView
+                android:id="@+id/booking"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/heart"
+                app:srcCompat="@drawable/booking1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/SearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnMessagesPass">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/messages1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ObjectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/object"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableTop="@drawable/facilities_house"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/CalendarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:onClick="OnCalendar"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/calendar"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/calendar"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/ProfileBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="10dp"
+            android:onClick="OnProfile">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/profile1"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

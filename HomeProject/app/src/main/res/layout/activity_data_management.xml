@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.DataManagementActivity"
+    android:background="@color/bg">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android:background=&quot;@drawable/border_bg3_2&quot;" />
+
+    <RelativeLayout
+    android:id="@+id/black_relative"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/black">
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/grey_relative_data_management"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg12"
+    android:layout_below="@+id/black_relative">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/data_management"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:fontFamily="@font/aleo_semibold"
+    android:textColor="@color/black"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/information_relativelayout_data_management"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/grey_relative_data_management"
+        android:background="@color/bg"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/text_delete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_account"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/text_delete_account_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_account_accept"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text_delete_account"
+            android:layout_marginHorizontal="10dp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/information_relativelayout_delete_account_accept"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_what_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/what_delete_account"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/bg"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/text_what_delete_account"
+                android:layout_marginTop="25dp"
+                android:buttonTint="@color/color_state_list">
+
+                <RadioButton
+                    android:id="@+id/discontent_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:text="@string/discontent"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_bg3_2"
+                    android:textSize="16dp" />
+                <RadioButton
+                    android:id="@+id/not_clear_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_clear"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_bg3_2"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"/>
+                <RadioButton
+                    android:id="@+id/deleting_duplicate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deleting_duplicate"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:background="@drawable/border_bg3_2"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"/>
+                <RadioButton
+                    android:id="@+id/rarely_use_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bg3_2"
+                    android:text="@string/rarely_use"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"/>
+                <RadioButton
+                    android:id="@+id/other_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bg3_2"
+                    android:text="@string/other"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"/>
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/btn_describe_reason"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/border_bg3_2"
+                android:hint="@string/describe_reason"
+                android:paddingHorizontal="15dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/radioGroup_delete_account"
+                android:visibility="invisible"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/btn_accept"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/border_bg12"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:enabled="false"
+                android:clickable="true"
+                android:onClick="OnBackSetting1"/>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_delete_account_accept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/confirm_delete_account"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true" />
+                <Button
+                    android:id="@+id/btn_accept1"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:enabled="false"
+                    android:onClick="OnCancelAccept" />
+
+                <Button
+                    android:id="@+id/btn_accept12"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:enabled="false"
+                    android:onClick="OnBackSetting1"/>
+
+                <Button
+                    android:id="@+id/delete_account_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="28dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/aleo_semibold"
+                    android:gravity="center"
+                    android:onClick="OnDeleteAccept"
+                    android:text="@string/delete_account1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

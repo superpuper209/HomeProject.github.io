@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.ProfileActivity"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/profile_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="@string/profile"
+        android:textSize="25dp"
+        android:fontFamily="@font/aleo_semibold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/bg12">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_maney"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/profile_layout"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/bg12">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/profile_maney"
+        android:layout_marginHorizontal="20dp">
+
+        <FrameLayout
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg"
+            android:onClick="OnProfileSetting">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:drawableLeft="@drawable/setting"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/setting"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/support"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg"
+            android:layout_below="@id/pass_object"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/support"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableLeft="@drawable/support"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg"
+            android:layout_below="@id/support"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/information"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableLeft="@drawable/information1"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg"
+            android:layout_below="@id/information"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/exit"
+                android:textColor="@color/red"
+                android:fontFamily="@font/aleo_semibold"
+                android:drawableLeft="@drawable/exit"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/pass_object"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/bg"
+            android:onClick="OnPass"
+            android:layout_below="@id/setting"
+            android:layout_marginTop="20dp"
+            android:clickable="true">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:drawableLeft="@drawable/facilities_house"
+                android:fontFamily="@font/aleo_semibold"
+                android:gravity="center"
+                android:text="@string/pass_flat"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/support_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/bg"
+            android:contentDescription="@string/back"
+            android:scrollbarSize="20dp"
+            app:srcCompat="@drawable/qwe"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aleo_semibold"
+            android:gravity="center"
+            android:text="@string/support"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/support_text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/bg12"
+            android:fontFamily="@font/aleo_semibold"
+            android:text="текст"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/support_text1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/support_text"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg12"
+            android:fontFamily="@font/aleo_semibold"
+            android:text="текст"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/support_text2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/support_text1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg12"
+            android:fontFamily="@font/aleo_semibold"
+            android:text="текст"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
